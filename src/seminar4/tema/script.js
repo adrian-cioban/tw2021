@@ -1,6 +1,5 @@
 // Implementați o funcție care face compresie RLE (Run Length Encoding)
 // asupra unui fișier text
-
 const fs = require('fs');
 const fileName = 'file1.txt';
 
