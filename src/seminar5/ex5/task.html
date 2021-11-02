@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agenda telefonică</title>
+
+    <script>
+      function adauga() {
+        let tbody = document.querySelector("tbody");
+
+        let rand = document.createElement("tr");
+
+        let celula = document.createElement("td");
+        celula.innerText = document.querySelector("#nume").value;
+        rand.append(celula);
+
+        celula = document.createElement("td");
+        celula.innerText = document.querySelector("#telefon").value;
+        rand.append(celula);
+
+        tbody.append(rand);
+
+        document.querySelector(
+          "tfoot td"
+        ).innerText = `Număr persoane: ${tbody.rows.length}`;
+      }
+
+      function aplicatie() {
+        let buton = document.querySelector("#btnAdauga");
+        buton.addEventListener("click", adauga);
+      }
+
+      document.addEventListener("DOMContentLoaded", aplicatie);
+    </script>
+  </head>
+  <body>
+    <h1>Agenda telefonică</h1>
+    <table>
+      <caption>
+        Lista persoane
+      </caption>
+      <thead>
+        <tr>
+          <th>Nume</th>
+          <th>Telefon</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          <td>Popescu</td>
+          <td>023423222</td>
+        </tr>
+        <tr>
+          <td>Vasilescu</td>
+          <td>073423222</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Număr persoane: 2</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <form action="#">
+      <label for="nume">Nume:</label>
+      <input name="nume" id="nume" /><br />
+      <label for="Telefon">Telefon:</label>
+      <input name="telefon" id="telefon" /><br />
+      <input type="button" id="btnAdauga" value="Adaugă" />
+    </form>
+  </body>
+</html>
