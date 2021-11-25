@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .sidebar {
+        width: 160px;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111111;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .main {
+        margin-left: 160px;
+        font-size: 28px;
+        padding-top: 0px 10px;
+      }
+
+      .sidebar a{
+        padding: 6px 8px 6px 16px;
+        display: block;
+        text-decoration: none;
+        color: #818181;
+        font-size: 28px;
+      }
+
+      .sidebar a:hover{
+        color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="main">
+      <h2>Sidebar Demo</h2>
+      <p>
+        <a name="about">About</a>
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      </p>
+      <p>
+        <a name="services">Services</a>
+        <div>
+            <ul>
+                <li>
+                    Item1<br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </li>
+                <li>
+                  Item2<br>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </li>
+              <li>
+                Item3<br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </li>
+            <li>
+              Item4<br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </li>
+            </ul>
+        </div>
+      </p>
+      <p>
+        <a name="contact">Contact</a>
+        <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+      </p>
+    </div>
+  </body>
+</html>

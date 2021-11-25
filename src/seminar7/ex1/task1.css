@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  padding: 16px;
+  margin: 10px;
+  background-color: lightcoral;
+}
+
+.column-item {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: large;
+}
+
+.column-item:hover {
+  color: white;
+}

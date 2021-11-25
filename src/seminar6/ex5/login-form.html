@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      .imgcontainer {
+      }
+
+      .container {
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Login Form</h2>
+    <form action="javascript:" method="post">
+      <div class="imgcontainer">
+        <img src="avatar.png" />
+      </div>
+      <div class="container">
+        <label for="username"><b>User Name</b></label>
+        <input
+          type="text"
+          placeholder="Enter User Name"
+          name="username"
+          required
+        />
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          required
+        />
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" name="remember" checked="checked" />Remember me
+        </label>
+      </div>
+      <div class="container">
+        <button type="button">Cancel</button>
+        <span>Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </body>
+</html>
